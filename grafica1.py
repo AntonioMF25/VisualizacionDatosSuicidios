@@ -28,9 +28,9 @@ for indice, fila in df.iterrows():
         yMujeres[int(fila["year"]) - 1979] += int(fila["suicides_no"])
 
 fig, ax = plt.subplots()
-ax.plot(xTotal, yTotal, color="red", label="Total")
-ax.plot(xHombres, yHombres, color="blue", label="Hombres")
-ax.plot(xMujeres, yMujeres, color="green", label="Mujeres")
+ax.plot(xTotal, yTotal, color="#EC7754", label="Total")
+ax.plot(xHombres, yHombres, color="#FEBA2C", label="Hombres")
+ax.plot(xMujeres, yMujeres, color="#B22B8F", label="Mujeres")
 
 plt.title("Suicidios entre 1979 y 2016")
 plt.xlabel("Años (1979-2016)")
